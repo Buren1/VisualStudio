@@ -1,5 +1,10 @@
-.container {width:1900px; height:50px; background-color:#222222;}
+.container {width:1900px; height:50px; background-color:#222222; display:flex; }
 .container-menu { color:#9c9c9c; margin-right:18px; text-decoration: none; font-size:18px;  }
 .container-menu:hover { color:#fff; margin-right:18px; text-decoration: none; font-size:18px;  }
-
-.menu-box { margin-left:1000px; padding-top:13px; }
+.image { margin-left:370px; padding-top:5px;}
+.menu-box { margin-left:400px; padding-top:13px; }
+.title { padding-top:13px; margin-left:10px; font-size:23px; color:#fff;}
+.title-number {color:#fff; padding-top:15px; margin-left:8px; }
+.search-bar { margin-left:9px; margin-top:9px; width:170px; height:30px; background-color:gray; border-radius: 1.3rem; background-color:#302F2E; display:flex; } 
+.search-word { color:#fff; font: size 17;px; margin-left:34px; margin-top:5px; }
+.menu-github { margin-left:100px; margin-top:5px; }
