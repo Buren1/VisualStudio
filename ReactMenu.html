@@ -4,32 +4,64 @@
 <link rel="stylesheet" href="ReactMenu.css">
 <meta charset="UTF-8">
 
+<script>
+        function clickBlur() {
+          document.getElementById('search').classList.remove('search--active');
+        }
+        function clickFocus() {
+          document.getElementById('search').classList.add('search--active');
+        }
+</script>
+
 </head>
 
 <body>
 
-    <div class="container">
+    
 
-            <img class="image" src="http://facebook.github.io/react-native/img/header_logo.png" alt="Smiley face" width="38" height="38" >
-            <div class="title" >React Native</div>
-            <div class="title-number" >0.59</div>
+    <div class="container">
+                    <img class="image" src="http://facebook.github.io/react-native/img/header_logo.png" alt="Smiley face" width="38" height="38" >
+                    <a  class="title" href="https://www.google.com/">React Native</a>
+                    <div class="title-number" >0.59</div>
+
+            
+                <div class="menu-box">
+                        <a  class="container-menu" href="https://www.google.com/">Docs</a>
+                        <a  class="container-menu" href="https://www.google.com/">API</a>
+                        <a  class="container-menu" href="https://www.google.com/">Community</a>
+                        <a  class="container-menu" href="https://www.google.com/">Blog</a>
+                </div>
+                    
+                <div class="searchbox">
+                        <div class="search" id="search">
+                                <div class="logo">
+                
+                                </div>
+                
+                                <input class="search__input" onfocus="clickFocus()" onblur="clickBlur()" placeholder="Search"/>
+                
+                        </div>
+                </div>
+
+                <div class="github">
+                        <a  class="container-menu" href="https://www.google.com/">GitHub</a>
+                </div>      
+    </div>
 
     
-        <div class="menu-box">
-                <a  class="container-menu" href="https://www.google.com/">Docs</a>
-                <a  class="container-menu" href="https://www.google.com/">API</a>
-                <a  class="container-menu" href="https://www.google.com/">Community</a>
-                <a  class="container-menu" href="https://www.google.com/">Blog</a>
-        </div>
-            
-        <div class="search-bar" > 
-            <div class="search-word" > Search </div>
-            <div class="menu-github"> 
-                <a  class="container-menu" href="https://www.google.com/">Github</a>
-            </div>
-        </div>
+    <div class="hero">
+            <div class="hero__title">React Native</div>
+            <div class="hero__desc">Build native mobile apps using JavaScript and React</div>
+            <button class="hero__button" href="/" >Get Started</button>
+            <button class="hero__button" href="/" >Learn the Basics</button>
+
 
     </div>
+
+
+     
+
+      
 
 </body>
 
