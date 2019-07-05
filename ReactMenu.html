@@ -13,40 +13,65 @@
         }
 </script>
 
+<style>
+        @media only screen and (max-width: 600px)  {
+                .mobile-menu { display: flex; }
+    }
+</style>
+
 </head>
 
 <body>
 
     
+<div class="header">
+                <div class="container">
+                        <div class="left-item" >
+                                        <img class="image" src="http://facebook.github.io/react-native/img/header_logo.png" alt="Smiley face" width="38" height="38" >
+                                        <a  class="title" href="https://www.google.com/">React Native</a>
+                                        <div class="title-number" >0.59</div>
+                        </div>
 
-    <div class="container">
-                    <img class="image" src="http://facebook.github.io/react-native/img/header_logo.png" alt="Smiley face" width="38" height="38" >
-                    <a  class="title" href="https://www.google.com/">React Native</a>
-                    <div class="title-number" >0.59</div>
-
-            
-                <div class="menu-box">
-                        <a  class="container-menu" href="https://www.google.com/">Docs</a>
-                        <a  class="container-menu" href="https://www.google.com/">API</a>
-                        <a  class="container-menu" href="https://www.google.com/">Community</a>
-                        <a  class="container-menu" href="https://www.google.com/">Blog</a>
-                </div>
-                    
-                <div class="searchbox">
-                        <div class="search" id="search">
-                                <div class="logo">
-                
+                        <div class="right-item">
+                                
+                            <div class="menu-box">
+                                        <a  class="container-menu" href="https://www.google.com/">Docs</a>
+                                        <a  class="container-menu" href="https://www.google.com/">API</a>
+                                        <a  class="container-menu" href="https://www.google.com/">Community</a>
+                                        <a  class="container-menu" href="https://www.google.com/">Blog</a>
+                                </div>
+                                    
+                                <div class="searchbox">
+                                        <div class="search" id="search">
+                                                <div class="logo">
+                                
+                                                </div>
+                                
+                                                <input class="search__input" onfocus="clickFocus()" onblur="clickBlur()" placeholder="Search"/>
+                                
+                                        </div>
                                 </div>
                 
-                                <input class="search__input" onfocus="clickFocus()" onblur="clickBlur()" placeholder="Search"/>
-                
+                                <div class="github">
+                                        <a  class="container-menu" href="https://www.google.com/">GitHub</a>
+                                </div>      
                         </div>
+                                
+            
+                        
                 </div>
+            
+</div>
+    
+    <div class="mobile-menu">
+        <a  class="mobile-menu__item" href="https://www.google.com/">Docs</a>
+        <a  class="mobile-menu__item" href="https://www.google.com/">API</a>
+        <a  class="mobile-menu__item" href="https://www.google.com/">Community</a>
+        <a  class="mobile-menu__item" href="https://www.google.com/">Blog</a>
+        <a  class="mobile-menu__item" href="https://www.google.com/">Github</a>
 
-                <div class="github">
-                        <a  class="container-menu" href="https://www.google.com/">GitHub</a>
-                </div>      
     </div>
+
 
     <div>
                 <div class="hero">
@@ -56,12 +81,8 @@
                                 <button class="hero__button" href="/" >Learn the Basics</button>   
                 </div>
     </div>
+
     
-
-
-     
-
-      
 
 </body>
 
